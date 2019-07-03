@@ -1,0 +1,23 @@
+{
+  "name": "scaling-sniffle",
+  "version": "1.0.0",
+  "description": "fun practice with React , Node , &  Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClarkF704/scaling-sniffle.git"
+  },
+  "author": "C-lark",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClarkF704/scaling-sniffle/issues"
+  },
+  "homepage": "https://github.com/ClarkF704/scaling-sniffle#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
