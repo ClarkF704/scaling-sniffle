@@ -1,10 +1,12 @@
 
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './landing.css';
 import bubble from '../../img/speech-bubble.png';
 import add from '../../img/add.png';
 import file from '../../img/file.png';
 import lightning from '../../img/lightning.png';
+import { Spring } from  'react-spring/renderprops';
 
 export default class Landing extends Component {
 	
@@ -16,12 +18,22 @@ export default class Landing extends Component {
             <div>
                  <div className="jumbotron">
       <div className="container">
-        <h1>Be the one.</h1>
+      <Spring
+            from={{ opacity:0}}
+            to={{opacity: 1}}
+            config={{ delay: 1000, duration:1000 }}
+            >
+            { props => (
+            <div>
+            {/* Insert below */}
+            <h1>Be the one.</h1>
+            </div>
+            ) }
+            </Spring>
         <p>Business configurations every 15 minutes.</p>
-        <a href="#">Learn More</a>
+        <a href="/form_input">Schedule Appointment</a>
       </div>
     </div>
-    
     <div className="neighborhood-guides">
          <div className="container">
             <h2>Business Guides</h2>
@@ -59,17 +71,14 @@ export default class Landing extends Component {
 	      <div className="col-md-4">
 			<h3>Safe</h3>
 			<p>From apartments and rooms to treehouses and boats: stay in unique spaces in 192 countries.</p>
-			<p><a href="#">See how to travel on Safe></a></p>
 	      </div>
 		  <div className="col-md-4">
 			<h3>Sharp</h3>
 			<p>Renting out your unused space could pay your bills or fund your next vacation.</p>
-			<p><a href="#">Learn more about Sharp</a></p>
 		  </div>
 		  <div className="col-md-4">
 			<h3>Trustworthy</h3>
 			<p>From Verified ID to our worldwide customer support team, we've got your back.</p>
-			<p><a href="#">Learn about trust at Trustworthy</a></p>
 		  </div>
 	    </div>
 	  </div>

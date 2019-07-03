@@ -14,13 +14,13 @@ export default class Landing extends Component {
                 <div class="nav">
       <div class="container">
         <ul class="pull-left">
-          <li><a href="#">Name</a></li>
-          <li><a href="#">Browse</a></li>
+          <li><a href="#">Example</a></li>
+          <li><a href="#">Example</a></li>
         </ul>
         <ul class="pull-right">
-          <li><a href="#">Sign Up</a></li>
-          <li><a href="#">Log In</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href="#">Example</a></li>
+          <li><a href="#">Example</a></li>
+          <li><a href="#">Example</a></li>
         </ul>
       </div>
     </div>
